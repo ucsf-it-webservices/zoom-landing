@@ -10,8 +10,7 @@
 
 	<style>
  		body {
-			background: url("account/branding/p/banner-image.jpg") no-repeat center #052049;
-			background-size: cover;
+			background: #052049;
 			margin: 0px;
 			padding: 0px;
 			border: none;
@@ -74,7 +73,7 @@
 			min-height: 30px;
 		}
 
-		.universal-header, .header, #main-content, .footer-content {
+		.universal-header, .header, .footer-content {
 	    margin: 0 auto;
 	    max-width: 1320px;
 	    padding: 0 20px;
@@ -136,6 +135,8 @@
 		}
 
 		#main-content {
+			background: url("account/branding/p/banner-image.jpg") no-repeat center #052049;
+			background-size: cover;
 			clear: both;
 			flex: 1 1 auto;
 			display: flex;
@@ -143,11 +144,15 @@
 	    justify-content: flex-start;
 	    align-items: stretch;
 	    align-content: stretch;
+			width 100%;
+			margin: 0;
+			padding: 0 20px;
 		}
 
 		.main-content {
 			align-self: center;
-			margin-bottom: 64px;
+			margin: 0 auto;
+			margin-bottom: 30px;
 			margin-top: 24px;
 			padding: 50px;
 			background: rgba(255,255,255,.8);
@@ -273,6 +278,7 @@
 
 			.main-content {
 				margin-top: 0;
+				margin-bottom: 64px;
 			}
 
 			.main-content li {
