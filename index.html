@@ -190,14 +190,16 @@
 			font-size: 14px;
 			width: 100%;
 			align-self: flex-end;
+			padding-bottom: 20px;
 		}
 
 		footer a {
 			color: #fff;
+			text-decoration: none;
 		}
 
 		footer a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 		}
 
 		footer h2 {
@@ -210,6 +212,24 @@
 			color: #fff;
 			text-transform: uppercase;
 			margin-top: 20px;
+		}
+
+		footer .contact li {
+			display: inline-block;
+		}
+
+		footer .contact li a {
+			display: inline-block;
+			width: 100%;
+			margin-right: 48px;
+			padding-left: 24px;
+			background: url("account/branding/p/contact-online.png") no-repeat left transparent;
+			background-size: 18px 18px;
+		}
+
+		footer .contact li a.contact-phone {
+			background: url("account/branding/p/contact-phone.png") no-repeat left transparent;
+			background-size: 18px 18px;
 		}
 
 		@media only screen and (min-width: 550px) {
@@ -328,8 +348,11 @@
 	</main>
 	<footer>
 		<div class="footer-content">
-			<h2 class="eyebrow">Having trouble?</h2>
-			<p>Contact the Service Desk <a href="https://ucsf.service-now.com/ess/">online</a> or by phone <a href="tel:+14155144100" class="">(415) 514-4100</a></p>
+			<h2>Having trouble? Contact the Service Desk:</h2>
+			<ul class="contact">
+				<li><a class="contact-online" href="https://ucsf.service-now.com/ess/">Online</a></li>
+				<li><a class="contact-phone" href="tel:+14155144100" class="">(415) 514-4100</a></li>
+			</ul>
 		</div>
 	</footer>
 </body>
